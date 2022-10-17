@@ -2,11 +2,9 @@ const fetchUrl = require("fetch").fetchUrl;
 
 const express = require('express');
 const app = express();
-// const port = 42100;
-const port = process.env.port || 42101 ;
-// const PORT = process.env.PORT || 3000;
+const port = 3000;
 
-const account = '@loinguyenvan274';
+const account = '@itstjarki';
 
 app.get('/api/followers', (req, res) => {
     const url = `https://www.tiktok.com/${account}`;
