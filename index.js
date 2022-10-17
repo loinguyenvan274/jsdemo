@@ -2,7 +2,9 @@ const fetchUrl = require("fetch").fetchUrl;
 
 const express = require('express');
 const app = express();
-const port = 42100;
+// const port = 42100;
+const port = process.env.port || 42100;
+// const PORT = process.env.PORT || 3000;
 
 const account = '@loinguyenvan274';
 
