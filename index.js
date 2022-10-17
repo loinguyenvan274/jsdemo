@@ -4,7 +4,7 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
-const account = '@itstjarki';
+const account = '@loinguyenvan274';
 
 app.get('/api/followers', (req, res) => {
     const url = `https://www.tiktok.com/${account}`;
