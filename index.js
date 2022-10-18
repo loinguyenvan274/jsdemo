@@ -29,6 +29,6 @@ app.get('/api/followers', (req, res) => {
 })
 
 app.listen(process.env.PORT || port, () => {
-    console.log(`Listening on ${port}`)
+    console.log(`Listening on ${process.env.PORT || port}`)
 })
 
