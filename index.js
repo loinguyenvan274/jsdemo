@@ -2,7 +2,7 @@ const fetchUrl = require("fetch").fetchUrl;
 
 const express = require('express');
 const app = express();
-const PORT = process.env.PORT || 42100;
+const port = process.env.PORT || 42100;
 
 const account = '@loinguyenvan274';
 
@@ -28,7 +28,7 @@ app.get('/api/followers', (req, res) => {
     });
 })
 
-app.listen(PORT, () => {
-    console.log(`Listening on ${PORT}`)
+app.listen(port, () => {
+    console.log(`Listening on ${port}`)
 })
 
