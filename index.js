@@ -5,7 +5,7 @@ const app = express();
 const port = process.env.PORT || 42100;
 
 const account = '@loinguyenvan274';
-
+app.get("/", (req, res)=> res.json("hello"))
 app.get('/api/followers', (req, res) => {
     const url = `https://www.tiktok.com/${account}`;
 
